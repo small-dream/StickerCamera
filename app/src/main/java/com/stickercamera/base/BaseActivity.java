@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.View;
@@ -29,6 +30,7 @@ public class BaseActivity extends AppCompatActivity implements ActivityResponsab
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("BaseActivity", "当前Activity :" + this.getClass().getSimpleName());
         super.onCreate(savedInstanceState);
         mActivityHelper = new ActivityHelper(this);
         initWindow();
