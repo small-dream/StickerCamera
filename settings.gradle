@@ -1,1 +1,1 @@
-include ':app', ':Gpu-Image', ':ImageViewTouch'
+include ':app', ':ImageViewTouch'
